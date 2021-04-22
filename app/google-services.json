@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887756716679",
+    "project_id": "hit-me-up-8f4fd",
+    "storage_bucket": "hit-me-up-8f4fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887756716679:android:1a31d2c329dfe7d1865622",
+        "android_client_info": {
+          "package_name": "com.cas.hitmeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887756716679-1ar64op30622n74c73g3ad769vgnk6so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8bDU8fMqTDwZGPINLNBlAcrHc1J37grg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887756716679-1ar64op30622n74c73g3ad769vgnk6so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
