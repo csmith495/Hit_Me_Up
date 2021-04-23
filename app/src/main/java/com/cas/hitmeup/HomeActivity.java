@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.cas.hitmeup.dictionary.DictionaryActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -28,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     UserAdapter adapter;
     FirebaseDatabase database;
     ArrayList<Users> usersArrayList;
-    ImageView imgLogout, imgSetting;
+    ImageView imgLogout, imgDictionary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         imgLogout = findViewById(R.id.image_logOut);
-        imgSetting = findViewById(R.id.img_Setting);
+        imgDictionary = findViewById(R.id.img_Dictionary);
         mainUserRecyclerView = findViewById(R.id.mainUserRecyclerView);
         mainUserRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new UserAdapter(HomeActivity.this, usersArrayList);
@@ -104,10 +105,10 @@ public class HomeActivity extends AppCompatActivity {
 
         }
 
-        imgSetting.setOnClickListener(new View.OnClickListener() {
+        imgDictionary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(HomeActivity.this, DictionaryActivity.class));
             }
         });
     }
