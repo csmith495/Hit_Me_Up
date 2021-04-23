@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HitMeUp">
-        <activity android:name=".dictionary.DictionaryActivity"></activity>
+        <activity android:name=".dictionary.ShowItemsListActivity"></activity>
+        <activity android:name=".dictionary.DictionaryActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".ChatActivity" />
         <activity android:name=".LoginActivity" />

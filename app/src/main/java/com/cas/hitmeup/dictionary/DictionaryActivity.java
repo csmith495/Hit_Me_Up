@@ -154,7 +154,11 @@ public class DictionaryActivity extends AppCompatActivity implements CategoryLis
 
     @Override
     public void itemClick(Category category) {
-        
+        Intent intent = new Intent(DictionaryActivity.this, ShowItemsListActivity.class);
+        intent.putExtra("category_id", category.uid);
+        intent.putExtra("category_name", category.categoryName);
+
+        startActivity(intent);
     }
 
     @Override
