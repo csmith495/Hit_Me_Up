@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hit Me Up</string>
+    <string name="resetpw_enter_email">Enter Email</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_resetpw_close">Close</string>
+    <string name="reset_password_instructions">Reset Password Instructions Have Been Sent To Your Email</string>
 </resources>

@@ -36,8 +36,16 @@ public class LoginActivity extends AppCompatActivity {
         txtSignUp = findViewById(R.id.txt_signup);
         signIn_btn = findViewById(R.id.signin_btn);
         resetpw_btn = findViewById(R.id.resetpw_btn);
+        resetpw_btn = findViewById(R.id.resetpw_btn);
         login_email = findViewById(R.id.login_email);
         login_password = findViewById(R.id.login_password);
+
+        resetpw_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+            }
+        });
 
         signIn_btn.setOnClickListener(new View.OnClickListener() {
             @Override
