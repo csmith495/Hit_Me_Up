@@ -20,6 +20,6 @@ The next two screenshots show the on-device database. The first screenshot shows
 
 
 ## Messenger
-The last screenshot shows the messenger feature of the application. This feature uses the Translation API and Firebase Realtime Database. When a user texts another, the message they send is coupled with a translation thanks to the Translation API. The message is then stored on the Firebase Realtime Database. Each conversation is stored on its own branch. The name of the branch is composed...
+The last screenshot shows the messenger feature of the application. This feature uses the Translation API and Firebase Realtime Database. When a user texts another, the message they send is coupled with a translation thanks to the Translation API. The message is then stored on the Firebase Realtime Database. Each conversation is stored on its own branch. The name of the branch is composed of both users' unique IDs.
 
 ![Screenshot_20210419-232333 1](https://user-images.githubusercontent.com/54324155/115939379-9ac12980-a463-11eb-9142-e493f7cc7ff9.png)
