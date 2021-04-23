@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     UserAdapter adapter;
     FirebaseDatabase database;
     ArrayList<Users> usersArrayList;
-    ImageView imgLogout, imgDictionary;
+    ImageView imgLogout, imgDictionary, imgTranslator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +61,7 @@ public class HomeActivity extends AppCompatActivity {
 
         imgLogout = findViewById(R.id.image_logOut);
         imgDictionary = findViewById(R.id.img_Dictionary);
+        imgTranslator = findViewById(R.id.img_Translator);
         mainUserRecyclerView = findViewById(R.id.mainUserRecyclerView);
         mainUserRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new UserAdapter(HomeActivity.this, usersArrayList);
@@ -109,6 +110,13 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, DictionaryActivity.class));
+            }
+        });
+
+        imgTranslator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, TranslatorActivity.class));
             }
         });
     }
