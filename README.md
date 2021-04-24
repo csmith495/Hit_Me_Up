@@ -1,4 +1,4 @@
-# Hit_Me_Up
+# Hit Me Up
 Hit Me Up is a messaging application where each text message is coupled with a Korean translation. I created this application as a platform for those who are learning Korean to practice what they have learned so far. This application also comes with an on-device translator and on-device dictionary.
 
 Tools Used:
