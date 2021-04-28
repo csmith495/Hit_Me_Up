@@ -27,6 +27,14 @@
             android:layout_marginLeft="@dimen/_10sdp" />
 
         <ImageView
+            android:id="@+id/img_ChatBot"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_chatbot"/>
+
+        <ImageView
             android:id="@+id/img_Translator"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
