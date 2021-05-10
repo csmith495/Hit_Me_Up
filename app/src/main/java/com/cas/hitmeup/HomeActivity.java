@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.cas.hitmeup.chatbot.BotActivity;
 import com.cas.hitmeup.dictionary.DictionaryActivity;
+import com.cas.hitmeup.videochat.VideoChatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -30,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
     UserAdapter adapter;
     FirebaseDatabase database;
     ArrayList<Users> usersArrayList;
-    ImageView imgLogout, imgDictionary, imgTranslator, imgChatBot;
+    ImageView imgLogout, imgDictionary, imgTranslator, imgVideoChat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,7 @@ public class HomeActivity extends AppCompatActivity {
         imgLogout = findViewById(R.id.image_logOut);
         imgDictionary = findViewById(R.id.img_Dictionary);
         imgTranslator = findViewById(R.id.img_Translator);
-        imgChatBot = findViewById(R.id.img_ChatBot);
+        imgVideoChat = findViewById(R.id.img_VideoChat);
         mainUserRecyclerView = findViewById(R.id.mainUserRecyclerView);
         mainUserRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new UserAdapter(HomeActivity.this, usersArrayList);
@@ -122,10 +123,10 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        imgChatBot.setOnClickListener(new View.OnClickListener() {
+        imgVideoChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, BotActivity.class));
+                startActivity(new Intent(HomeActivity.this, VideoChatActivity.class));
             }
         });
     }

@@ -29,11 +29,9 @@ public class BotActivity extends AppCompatActivity {
         userTestTV = findViewById(R.id.tvOne);
         agentTestTV = findViewById(R.id.tvTwo);
 
-        final AIConfiguration config = new AIConfiguration("990a807fb9e87c06430fcfe62949792baa9f7105",
-                AIConfiguration.SupportedLanguages.English,
-                AIConfiguration.RecognitionEngine.System);
+        final AIConfiguration config = new AIConfiguration("990a807fb9e87c06430fcfe62949792baa9f7105", AIConfiguration.SupportedLanguages.English, AIConfiguration.RecognitionEngine.System);
 
-        AIService aiService = AIService.getService(getApplicationContext(), config);
+        AIService aiService = AIService.getService(this, config);
         aiService.setListener(new AIListener() {
             @Override
             public void onResult(AIResponse result) {
